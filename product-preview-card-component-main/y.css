@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+:root {
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+main {
+  padding: 2.5rem 0.8rem 0.8rem 0.8rem;
+  margin: auto;
+}
+#image {
+  background-color: white;
+  border-radius: 6px 6px 0 0;
+}
+img {
+  width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+#second {
+  display: none;
+}
+#content {
+  font-family: "Fraunces", sans-serif;
+  background-color: white;
+  border-radius: 0 0 8px 8px;
+  padding: 1rem;
+}
+p {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 0.4rem;
+  font-weight: lighter;
+}
+h1 {
+  color: hsl(212, 21%, 14%);
+  font-size: 2rem;
+  line-height: 32px;
+  padding-bottom: 0.8rem;
+}
+#preview {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  padding-bottom: 0.9rem;
+  font-weight: 100;
+  color: var(--very-dark-blue)
+}
+#content ul {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.7rem;
+}
+li {
+  font-family: "Fraunces", sans-serif;
+  text-decoration: line-through;
+  color: hsl(228, 12%, 48%);
+}
+#price {
+  text-decoration: none;
+  font-size: 35px;
+  font-weight: bolder;
+  margin-right: 0.8rem;
+  color: hsl(158, 36%, 37%);
+}
+#cart {
+  font-family: "Montserrat", sans-serif;
+  font-size: 13px;
+  background-color: hsl(158, 36%, 37%);
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cart img {
+  height: 17px;
+  width: 17px;
+}
+#cart p {
+  color: white;
+  text-align: center;
+  padding: 0.6rem;
+}
+footer{
+  text-align: center;
+}
+footer p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 14px;
+}
+@media screen and (min-width: 375px) {
+  main {
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 50%;
+  }
+  #first {
+    display: none;
+  }
+  #image {
+    width: 50%;
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+  }
+  #second {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px 0px 0px 8px;
+    display: initial;
+  }
+  #content {
+    width: 50%;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+  }
+  #cart {
+    margin-top: 1rem;
+  }
+}
